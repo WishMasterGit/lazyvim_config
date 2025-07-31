@@ -21,6 +21,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { "marko-cerovac/material.nvim" },
+    { "nvim-telescope/telescope.nvim" },
+    { "nvim-telescope/telescope-file-browser.nvim" },
     -- import/override with your plugins
     { import = "plugins" },
   },
