@@ -23,7 +23,6 @@ require("lazy").setup({
     { "marko-cerovac/material.nvim" },
     { "nvim-lua/plenary.nvim" },
     { "nvim-telescope/telescope.nvim" },
-    { "nvim-telescope/telescope-file-browser.nvim" },
     -- import/override with your plugins
     { import = "plugins" },
   },
