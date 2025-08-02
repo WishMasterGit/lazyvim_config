@@ -9,6 +9,7 @@ vim.keymap.set(
   ":lua ToggleCopilot()<CR>",
   { noremap = true, silent = true, desc = "Toggle Copilot" }
 )
+
 -- vim.keymap.set("n", "<leader>at", function()
 --   if vim.g.copilot_enabled == 1 then
 --     vim.cmd("Copilot disable")
