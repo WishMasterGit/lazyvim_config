@@ -23,6 +23,7 @@ require("lazy").setup({
     { "marko-cerovac/material.nvim" },
     { "nvim-lua/plenary.nvim" },
     { "nvim-telescope/telescope.nvim" },
+    { "tree-sitter/tree-sitter-html" },
     -- import/override with your plugins
     { import = "plugins" },
   },
