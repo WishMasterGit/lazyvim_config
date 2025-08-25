@@ -25,3 +25,22 @@ function ToggleCopilot()
   end
   copilot_enabled = not copilot_enabled
 end
+
+local virtual_text = false
+vim.diagnostic.config({ virtual_text = virtual_text })
+vim.api.nvim_create_autocmd("User", {
+  pattern = "LazyLoad",
+  callback = function()
+    vim.diagnostic.config({ virtual_text = false })
+  end,
+})
+function ToggleVirtualText()
+  if virtual_text then
+    vim.diagnostic.config({ virtual_text = not virtual_text })
+    print("Virtual text disabled")
+  else
+    vim.diagnostic.config({ virtual_text = not virtual_text })
+    print("Virtual text enabled")
+  end
+  virtual_text = not virtual_text
+end
