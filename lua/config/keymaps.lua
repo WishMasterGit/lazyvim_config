@@ -15,6 +15,7 @@ vim.keymap.set(
   ":lua ToggleVirtualText()<CR>",
   { noremap = true, silent = true, desc = "Virtual text" }
 )
+vim.keymap.set("n", "gq", ":w<CR>", { noremap = true, silent = true, desc = "Save file" })
 
 -- vim.keymap.set("n", "<leader>at", function()
 --   if vim.g.copilot_enabled == 1 then
